@@ -17,6 +17,7 @@ max_photos_per_session = 4
 pics_per_group = 4
 slideshow_duration = 8
 glob_copy_path = ''
+session_start_name = 'session00001'
 
 logging.basicConfig(level=logging.DEBUG, format='(%(threadName)-10s) %(message)s',)
 
@@ -132,9 +133,9 @@ def delete_files(path):           #function to delete duplicate photos 1.jpg to 
 
 
 
-check_if_path_exists(rootpath, dirpath, temp_path, 'session00001')
+check_if_path_exists(rootpath, dirpath, temp_path, session_start_name)
 
-folder_list =  os.listdir(dirpath)   # get global folder contents in list (folders & files)
+#folder_list =  os.listdir(dirpath)   # get global folder contents in list (folders & files)
 
 
   
