@@ -1,0 +1,22 @@
+[1:1:5373712192:ERROR:nss_util.cc(692)] Failed to load NSS libraries.
+[1:1:5377564441:ERROR:nss_util.cc(692)] Failed to load NSS libraries.
+[4:4:5392151893:ERROR:nss_util.cc(452)] Error initializing NSS without a persistent database: libsoftokn3.so: cannot open shared object file: Permission denied
+[3333:3333:5396036395:ERROR:gl_surface_glx.cc(57)] glxQueryVersion failed
+[3333:3333:5396037380:ERROR:gl_surface_linux.cc(58)] GLSurfaceGLX::InitializeOneOff failed.
+[3252:3252:5398261867:ERROR:notification_promo.cc(239)] Malformed JSON: not ntp_notification_promo
+[1:1:8854129643:ERROR:nss_util.cc(692)] Failed to load NSS libraries.
+[4:4:8858276661:ERROR:nss_util.cc(452)] Error initializing NSS without a persistent database: libsoftokn3.so: cannot open shared object file: Permission denied
+[3857:3857:8863393786:ERROR:gl_surface_glx.cc(57)] glxQueryVersion failed
+[3857:3857:8863394653:ERROR:gl_surface_linux.cc(58)] GLSurfaceGLX::InitializeOneOff failed.
+[1:1:9124231585:ERROR:nss_util.cc(692)] Failed to load NSS libraries.
+[4:4:9127724329:ERROR:nss_util.cc(452)] Error initializing NSS without a persistent database: libsoftokn3.so: cannot open shared object file: Permission denied
+[4106:4106:9131541652:ERROR:gl_surface_glx.cc(57)] glxQueryVersion failed
+[4106:4106:9131545638:ERROR:gl_surface_linux.cc(58)] GLSurfaceGLX::InitializeOneOff failed.
+[1:1:9463904537:ERROR:nss_util.cc(692)] Failed to load NSS libraries.
+[4:4:9471242109:ERROR:nss_util.cc(452)] Error initializing NSS without a persistent database: libsoftokn3.so: cannot open shared object file: Permission denied
+[4257:4257:9475741851:ERROR:gl_surface_glx.cc(57)] glxQueryVersion failed
+[4257:4257:9475747386:ERROR:gl_surface_linux.cc(58)] GLSurfaceGLX::InitializeOneOff failed.
+[1:1:9580671751:ERROR:nss_util.cc(692)] Failed to load NSS libraries.
+[4:4:9588882217:ERROR:nss_util.cc(452)] Error initializing NSS without a persistent database: libsoftokn3.so: cannot open shared object file: Permission denied
+[4434:4434:9594259637:ERROR:gl_surface_glx.cc(57)] glxQueryVersion failed
+[4434:4434:9594261603:ERROR:gl_surface_linux.cc(58)] GLSurfaceGLX::InitializeOneOff failed.

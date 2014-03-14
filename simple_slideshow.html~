@@ -1,0 +1,38 @@
+<!doctype html>
+<!-- Pulled from http://snook.ca/archives/javascript/simplest-jquery-slideshow -->
+
+<html lang="en">
+<head>
+<title>Simplest jQuery Slideshow</title>
+
+<style>
+.fadein { position:relative; height:700px; width:700px; margin-left: auto, margin-right: auto }
+.fadein img { position:absolute; left:0; top:0; }
+
+div.fadein {   margin-left: auto;   margin-right: auto; }
+
+</style>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<!--
+
+<script src="/home/pi/libraries/jquery-1.11.0.js"></script>-->
+<script>
+$(function(){
+	$('.fadein img:gt(0)').hide();
+	setInterval(function(){$('.fadein :first-child').fadeOut().next('img').fadeIn().end().appendTo('.fadein');}, 1500);
+setTimeout('top.window.close();',7500);
+});
+</script>
+
+</head>
+<body>
+<div class="fadein">
+<img src="/home/pi/photobooth/inventory/processing.gif">
+<img src="/home/pi/foto_dump/temp/1.jpg">
+<img src="/home/pi/foto_dump/temp/2.jpg">
+<img src="/home/pi/foto_dump/temp/3.jpg">
+<img src="/home/pi/foto_dump/temp/4.jpg">
+</div>
+</body>
+</html>
