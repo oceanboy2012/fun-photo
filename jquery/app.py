@@ -37,9 +37,14 @@ def add_numbers():
     b = request.args.get('b', 0, type=int)
     return jsonify(result=a + b)
 
-def take_pictures():
+@app.route('/show')
+def show():
+    return render_template('simple_slideshow.html')
+
+#def take_pictures():
     
-    return 
+
+#    return 
 
 if __name__ == '__main__':
     app.run(
