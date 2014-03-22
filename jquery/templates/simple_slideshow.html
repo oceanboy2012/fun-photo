@@ -18,11 +18,24 @@ div.fadein {   margin-left: auto;   margin-right: auto; }
 
 <script src="/home/pi/libraries/jquery-1.11.0.js"></script>-->
 <script>
+var timesRun = 0;
+var interval = setInterval(function(){
+	timesRun += 1;
+	if(timesRun === 2){
+		clearInterval(interval);
+	}
+
+	$(function(){
+		$('.fadein img:gt(0)').hide();
+			setInterval(function(){
+				$('.fadein :first-child').fadeOut().next('img').fadeIn().end().appendTo('.fadein');}, 1500);
+	});
+}, 2000);
+
 $(function(){
-	$('.fadein img:gt(0)').hide();
-	setInterval(function(){$('.fadein :first-child').fadeOut().next('img').fadeIn().end().appendTo('.fadein');}, 1500);
+	$('.close').hide();
+	setTimeout('window.close();',8500);
 });
-setTimeout('window.close();',8500);
 
 </script>
 
