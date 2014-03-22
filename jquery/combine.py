@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/home/pi/.viertualenvs/flask/bin/python
 
 import time
 import os 
