@@ -23,17 +23,12 @@ var timesRun = 0;
 		$('.fadein img:gt(0)').hide();	
 		var interval =	setInterval(function(){
 			timesRun += 1;
-			if(timesRun === 6){
+			if(timesRun === 5){
 				clearInterval(interval);
 				window.open("/","_self");
 			}
-		$('.fadein :first-child').fadeOut().next('img').fadeIn().end().appendTo('.fadein');}, 1500);
+		$('.fadein :first-child').fadeOut().next('img').fadeIn().end().appendTo('.fadein');}, 2500);
 	},2000);
-
-$(function(){
-	$('.close').hide();
-	setTimeout('window.close();',8500);
-});
 
 </script>
 
