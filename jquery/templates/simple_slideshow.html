@@ -21,18 +21,20 @@ div.fadein {   margin-left: auto;   margin-right: auto; }
 $(function(){
 	$('.fadein img:gt(0)').hide();
 	setInterval(function(){$('.fadein :first-child').fadeOut().next('img').fadeIn().end().appendTo('.fadein');}, 1500);
-setTimeout('top.window.close();',8500);
 });
 </script>
+
+<!-- setTimeout('top.window.close();',8500); -->
+
 
 </head>
 <body>
 <div class="fadein">
-<img src="/inventory/processing.gif">
-<img src="/temp/1.jpg">
-<img src="/temp/2.jpg">
-<img src="/temp/3.jpg">
-<img src="/temp/4.jpg">
+<img src="static/inventory/processing.gif">
+<img src="static/pics/1.jpg">
+<img src="static/pics/2.jpg">
+<img src="static/pics/3.jpg">
+<img src="static/pics/4.jpg">
 </div>
 </body>
 </html>
