@@ -12,6 +12,8 @@
 # using the request object from flask. jsonigy is required
 # to send JSON as a response of a request
 from flask import Flask, render_template, request, jsonify
+import picamera
+import time
 
 # Initialize the Flask application
 app = Flask(__name__)
@@ -42,7 +44,16 @@ def show():
     return render_template('simple_slideshow.html')
 
 #def take_pictures():
-    
+@app.route('/take')
+def take():
+    with picamera.PiCamera() as camera:
+        camera.resolution = (1024, 768)
+        camera.start_preview()
+        time.sleep(2)
+        for x in range(1,4):
+            camera.capture('/home/pi/git/flask/jquery/%s.jpg' % (x))
+            time.sleep(3)
+    return render_template('simple_slideshow.html')    
 
 #    return 
 
