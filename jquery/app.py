@@ -50,9 +50,9 @@ def take():
         camera.resolution = (1024, 768)
         camera.start_preview()
         time.sleep(2)
-        for x in range(1,4):
-            camera.capture('/home/pi/git/flask/jquery/%s.jpg' % (x))
-            time.sleep(3)
+        for x in range(1,5):
+            camera.capture('/home/pi/git/flask/jquery/static/test/%s.jpg' % (x))
+            time.sleep(1)
     return render_template('simple_slideshow.html')    
 
 #    return 
