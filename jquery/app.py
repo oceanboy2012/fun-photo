@@ -1,3 +1,5 @@
+#!/home/pi/.viertualenvs/flask/bin/python
+
 # In this example we are going to create a simple HTML
 # page with 2 input fields (numbers), and a link.
 # Using jQuery we are going to send the content of both
@@ -13,6 +15,10 @@ from flask import Flask, render_template, request, jsonify
 
 # Initialize the Flask application
 app = Flask(__name__)
+
+#load default configuations then user specified
+#app.config.from_object('photobooth.default_settings')
+#app.config.from_envvar('USER_SETTINGS')
 
 
 # This route will show a form to perform an AJAX request
@@ -31,10 +37,14 @@ def add_numbers():
     b = request.args.get('b', 0, type=int)
     return jsonify(result=a + b)
 
+def take_pictures():
+    
+    return 
+
 if __name__ == '__main__':
     app.run(
         host="0.0.0.0",
-        port=int("80"),
+        port=int("5000"),
         debug=True
     )
 
